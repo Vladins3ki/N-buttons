@@ -1,0 +1,23 @@
+.button{
+    height:100px;
+    width:150px;
+    background-color:rgb(43, 226, 223);
+    border-radius: 50px;
+    border-color: black;
+    margin-right: 30px;
+    
+}
+
+#format{
+    font-size: 3cm;
+    margin-left: 490px;
+    font-family: "Righteous";
+    color:peru
+}
+#myButton{
+    background-color: rgb(255, 255, 255);
+    color:rgb(165, 42, 42);
+}
+h1{
+    color:black;
+}

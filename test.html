@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet"> 
+
+    <title>Document</title>
+</head>
+<body>
+    <label><h1>Add a number:</h1></label>
+    <input type="text" placeholder="Type here" id="myText">
+    <button type ="button"  id="myButton"><strong>Submit</strong></button>
+    <button id="reset"><b>Try again!</b></button>
+    
+    <script>
+        document.getElementById("reset").onclick = function(){
+             window.location.reload();
+        }
+        
+          document.getElementById("myButton").onclick = function(){
+             let x =document.getElementById("myText").value;
+             for( i = 1; i <= x; ++i) {
+                 let button = document.createElement('button')
+                 let y = i;
+                 button.className = "button"
+                 button.id =  y
+                 button.value = "WRONG!" 
+                 button.addEventListener('click', () => {
+                    document.getElementById("format").innerHTML = document.getElementById(y).value;
+                })
+
+                document.body.appendChild(button)
+            }
+            let z = Math.floor(Math.random() * x) +1;
+            document.getElementById(z).value = "CORRECT!";
+            document.getElementById("myText").value = "";
+        
+          }
+        
+        
+    </script>  
+    <p id="format"></p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
