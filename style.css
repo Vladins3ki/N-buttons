@@ -9,15 +9,12 @@
 }
 
 #format{
-    font-size: 3cm;
+    font-size: 1cm;
     margin-left: 490px;
     font-family: "Righteous";
     color:peru
 }
-#myButton{
+#submit{
     background-color: rgb(255, 255, 255);
     color:rgb(165, 42, 42);
-}
-h1{
-    color:black;
 }
