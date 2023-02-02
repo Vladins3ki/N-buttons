@@ -12,8 +12,7 @@
              button.addEventListener('click', () => {
              document.getElementById("format").innerHTML = document.getElementById(i).value;
              })
-
-            document.body.appendChild(button)
+             document.body.appendChild(button)
          }
     let randomNumber = Math.floor(Math.random() * numberValue) +1;
     document.getElementById(randomNumber).value = "You clicked the right button!";
